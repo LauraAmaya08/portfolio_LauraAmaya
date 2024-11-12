@@ -4,9 +4,9 @@ import { useState } from 'react';
 
 export const Header = () => {
     return (
-    <div>
-        <div>
-            <Link to= "/"><img src="/images/logo.png" alt="Logo"/></Link>
+    <div className="bg-[#F4F4F4] p-4 h-">
+        <div className="flex items-center justify-between h-full">
+            <Link to= "/"><img src="/images/logo.png" alt="Logo" className="w-auto h-16"/></Link>
             <Menu/>
         </div>
         
@@ -36,6 +36,4 @@ const Menu = () =>  {
     </div>
     );
 }
-
-
 
