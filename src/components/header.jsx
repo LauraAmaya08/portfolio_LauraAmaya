@@ -6,7 +6,7 @@ export const Header = () => {
     return (
     <div className="bg-[#F4F4F4] p-4 h-">
         <div className="flex items-center justify-between h-full">
-            <Link to= "/"><img src="/images/logo.png" alt="Logo" className="w-auto h-16"/></Link>
+            <Link to= "/"><img src="/images/logo.png" alt="Logo" className="w-auto h-[130px]"/></Link>
             <Menu/>
         </div>
         
@@ -23,7 +23,7 @@ const Menu = () =>  {
     };    
     return (
     <div>
-        <button onClick={interactuarMenu}>Menú <img src="icons/menu.svg" alt="Icono" /> </button>
+        <button onClick={interactuarMenu} className= "flex justify-between items-center w-20 mr-20" >Menú <img src="icons/menu.svg" alt="Icono" className="h-[30px]" /> </button >
         {abierto && (
         <ul>
         <button onClick={()=>{navigate('/about')}}>About</button>
