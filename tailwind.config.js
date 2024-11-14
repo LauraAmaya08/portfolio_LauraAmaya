@@ -5,6 +5,9 @@ export default {
     extend: {
       colors: {
         'azul': '#011C40'
+      },
+      fontFamily: {
+        outfit : ['Outfit','sans-serif'],
       }
     },
   },
