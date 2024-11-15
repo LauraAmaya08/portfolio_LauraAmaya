@@ -10,7 +10,7 @@ export const Header = () => {
           <img
             src="/images/logo.png"
             alt="Logo"
-            className="w-auto h-[130px] ml-2"
+            className="w-auto h-[130px] ml-20"
           />
         </Link>
         <Menu />
@@ -27,68 +27,77 @@ const Menu = () => {
   };
   return (
     <div>
-      <button
-        onClick={interactuarMenu}
-        className="flex justify-between items-center w-20 mr-20 p-2"
-      >
-        Menú
-        <img src="icons/menu.svg" alt="Icono" className="h-[30px]" />
+      <button onClick={interactuarMenu} className="w-20 mr-20">
+      <img src="icons/menu.svg" alt="Icono" className="h-10" />
       </button>
-      <ul
+      <div
         className={`${
           abierto ? "block" : "hidden"
-        } absolute top-0 left-0 bg-azul h-screen w-full`}
+        } absolute top-0 left-0 bg-azul h-screen w-full flex flex-col items-start p-20`}
       >
-        <li>
-        <button
-        onClick={interactuarMenu}
-        className="flex justify-between items-center w-20 mr-20 p-2"
-      >
-        Menú
-        <img src="icons/menu.svg" alt="Icono" className="h-[30px]" />
+      <button onClick={interactuarMenu} className="w-20 mr-20">
+      <img src="icons/exit.svg" alt="Icono" className="h-10" />
       </button>
-        </li>
-        <li>
-          <button
-            onClick={() => navigate("/about")}
-            className="text-white text-lg"
-          >
-            About
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => navigate("/services")}
-            className="text-white text-lg"
-          >
-            Services
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => navigate("/projects")}
-            className="text-white text-lg"
-          >
-            Projects
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => navigate("/certifications")}
-            className="text-white text-lg"
-          >
-            Certifications
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => navigate("/contact")}
-            className="text-white text-lg"
-          >
-            Contact
-          </button>
-        </li>
-      </ul>
+      <div
+        className={`flex justify-around items-center flex-row-reverse h-[70vh] w-[80vw]`}
+      >
+        <ul className="flex flex-col">
+          <li>
+            <button
+              onClick={() => {
+                navigate("/about"), setAbierto(!abierto);
+              }}
+              className="text-white text-lg mt-10"
+            >
+              About
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                navigate("/services"), setAbierto(!abierto);
+              }}
+              className="text-white text-lg mt-10"
+            >
+              Services
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                navigate("/projects"), setAbierto(!abierto);
+              }}
+              className="text-white text-lg mt-10"
+            >
+              Projects
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                navigate("/certifications"), setAbierto(!abierto);
+              }}
+              className="text-white text-lg mt-10"
+            >
+              Certifications
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => {
+                navigate("/contact"), setAbierto(!abierto);
+              }}
+              className="text-white text-lg mt-10"
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+        <p className="text-white text-lg mt-10" >
+          What you're seeing here is just the beginning..
+        </p>
+      </div>
+      </div>
     </div>
   );
 };

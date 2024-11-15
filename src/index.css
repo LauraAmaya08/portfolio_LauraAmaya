@@ -1,4 +1,8 @@
-/* src/index.css o tu archivo de estilos globales */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root{
+    background-color: #F4F4F4 ;
+}
