@@ -33,7 +33,7 @@ const Menu = () => {
       <div
         className={`${
           abierto ? "block" : "hidden"
-        } absolute top-0 left-0 bg-azul h-screen w-full flex flex-col items-start p-20`}
+        } absolute top-0 left-0 bg-azul h-screen w-full flex flex-col items-start p-20 z-50`}
       >
       <button onClick={interactuarMenu} className="w-20 mr-20">
       <img src="icons/exit.svg" alt="Icono" className="h-10" />
