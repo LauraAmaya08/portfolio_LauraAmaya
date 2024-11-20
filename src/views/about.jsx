@@ -1,8 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
+import useVisibilidad from "../components/visibilidad";
 
 export const About = () => {
     return(
-        <div className="h-[100%] m-0">
+        <motion.div
+                className="h-[100%] m-0"
+                initial={{ opacity: 0, scale: 1 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1.2 }}
+            >
             <div className="flex items-center flex-row-reverse justify-evenly">
                 <div className="flex flex-col w-[600px]">
                     <h2 className="text-7xl p-8 text-azul font-bold text-left">About Me</h2>
@@ -16,27 +23,37 @@ export const About = () => {
                 <img src="icons/rest.svg" alt="Rest" className="w-[130px] h-[110px] absolute top-[15%] left-[34%]"/>
             </div>
             <MissionVision/>
-        </div>
+        </motion.div>
     )
 }
 
 
 const MissionVision = () => {
+    const visible = useVisibilidad("mission-vision");
     return (
-        <div className="flex items-center flex-row-reverse justify-around mt-[10%] h-[100vh]">
-            <div className="flex flex-col w-[600px] items-center">
-                <h2 className="text-7xl p-8 text-azul font-bold text-left">Vision</h2>
-                <p className="m-10 mt-0 font-outfit text-lg">
+        <motion.div
+        className="flex items-center flex-row-reverse justify-evenly h-[100vh] p-6"
+        initial={{ opacity: 0, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2 }}
+        id="mission-vision" 
+        >
+            <div className="flex flex-col w-[600px] items-center h-[500px]">
+                <h2 className="text-8xl p-8 text-azul font-bold text-left">Vision</h2>
+                <p className="m-10 mt-1 font-outfit text-2xl text-center">
                 Create a positive impact through dynamic technological solutions that simplify daily life and processes, fostering a world where digital innovation drives personal and social growth.
                 </p>
             </div>
-            <div className="flex flex-col w-[600px] items-center">
-                <h2 className="text-7xl p-8 text-azul font-bold text-left">Mission</h2>
-                <p className="m-10 mt-0 font-outfit text-lg">
+            <div className="flex flex-col w-[600px] items-center h-[500px]">
+                <h2 className="text-8xl p-8 text-azul font-bold text-left">Mission</h2>
+                <p className="m-10 mt-1 font-outfit text-2xl text-center">
                 Develop tools that blend leadership and collaboration to tackle technological challenges, from projects that empower emerging countries to initiatives that build trust in artificial intelligence as a force for positive change.
                 </p>
             </div>
-        </div>
+            <div className="absolute flex justify-center mt-[50vh]">
+             <img src="icons/visionMission.svg" alt="Vision Mission" className="h-[250px] w-auto" />
+            </div>
+        </motion.div>
     )
 }
 
