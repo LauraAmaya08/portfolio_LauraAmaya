@@ -13,7 +13,7 @@ const useVisibilidad = (elemento) => {
         }
       },
       {
-        threshold: 0.8, 
+        threshold: 0.5, 
       }
     );
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useVisibilidad from "../components/visibilidad";
+import { Skill } from "../components/skill";
 
 export const About = () => {
     return(
@@ -8,7 +9,7 @@ export const About = () => {
                 className="h-[100%] m-0"
                 initial={{ opacity: 0, scale: 1 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1.2 }}
+                transition={{ duration: 1 }}
             >
             <div className="flex items-center flex-row-reverse justify-evenly">
                 <div className="flex flex-col w-[600px]">
@@ -23,6 +24,7 @@ export const About = () => {
                 <img src="icons/rest.svg" alt="Rest" className="w-[130px] h-[110px] absolute top-[15%] left-[34%]"/>
             </div>
             <MissionVision/>
+            <Tech/>
         </motion.div>
     )
 }
@@ -32,10 +34,10 @@ const MissionVision = () => {
     const visible = useVisibilidad("mission-vision");
     return (
         <motion.div
-        className="flex items-center flex-row-reverse justify-evenly h-[100vh] p-6"
+        className="flex items-center flex-row-reverse justify-evenly h-[90vh] p-6"
         initial={{ opacity: 0, scale: 1 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2 }}
+        animate={{opacity: visible ? 1 : 0, scale: visible ? 1 : 1 }}
+        transition={{ duration: 1 }}
         id="mission-vision" 
         >
             <div className="flex flex-col w-[600px] items-center h-[500px]">
@@ -51,9 +53,31 @@ const MissionVision = () => {
                 </p>
             </div>
             <div className="absolute flex justify-center mt-[50vh]">
-             <img src="icons/visionMission.svg" alt="Vision Mission" className="h-[250px] w-auto" />
+            <img src="icons/visionMission.svg" alt="Vision Mission" className="h-[250px] w-auto" />
             </div>
         </motion.div>
     )
 }
 
+const Tech = () => {
+    const visible = useVisibilidad("tech");
+    return (
+        <motion.div
+        className="flex items-center text-center flex-col h-[90vh] p-6 mt-2"
+        initial={{ opacity: 0, scale: 1 }}
+        animate={{opacity: visible ? 1 : 0, scale: visible ? 1 : 1 }}
+        transition={{ duration: 1 }}
+        id="tech" 
+        >
+            <h2 className="text-8xl top-0 text-azul font-bold text-center">Skills</h2>
+            <div className="flex justify-around h-[500px] w-full items-center mt-10">
+                <div className="h-[400px] w-[400px] bg-blue-500">
+                <Skill nombre="CSS" src="icons/html.svg" />
+                </div>
+                <div className="h-[400px] w-[400px] bg-red-500">
+
+                </div>
+            </div>
+        </motion.div>
+    )
+}
