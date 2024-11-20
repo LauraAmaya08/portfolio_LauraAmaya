@@ -37,68 +37,72 @@ const Menu = () => {
         <button onClick={interactuarMenu} className="w-20 mr-20">
           <img src="icons/exit.svg" alt="Icono" className="h-10 absolute right-[135px] top-[60px]" />
         </button>
-        <div className="flex justify-between items-center flex-row-reverse h-[80vh] w-[80vw]">
-          <ul className="flex flex-col space-y-6">
-            <li className="w-full border-b-2 border-white pb-2">
+        <div className="flex justify-between items-center flex-row-reverse h-[75vh] w-[80vw]">
+          <ul className="flex flex-col w-[25%]">
+            <li className="border-b-[1px] border-white text-right">
               <button
                 onClick={() => {
                   navigate("/about");
-                  setAbierto(false);
+                  setAbierto(!abierto);
                 }}
-                className="text-white text-2xl mt-10 font-outfit pb-2 text-right"
+                className="text-white text-2xl mt-10 font-outfit p-2"
               >
                 About
               </button>
             </li>
-            <li className="w-full border-b-2 border-white pb-2">
+            <li className="border-b-[1px] border-white text-right">
               <button
                 onClick={() => {
                   navigate("/services");
                   setAbierto(false);
                 }}
-                className="text-white text-2xl mt-10 font-outfit pb-2 text-right"
+                className="text-white text-2xl mt-10 font-outfit pb-2"
               >
                 Services
               </button>
             </li>
-            <li className="w-full border-b-2 border-white pb-2">
+            <li className="border-b-[1px] border-white text-right">
               <button
                 onClick={() => {
                   navigate("/projects");
                   setAbierto(false);
                 }}
-                className="text-white text-2xl mt-10 font-outfit pb-2 text-right"
+                className="text-white text-2xl mt-10 font-outfit p-2"
               >
                 Projects
               </button>
             </li>
-            <li className="w-full border-b-2 border-white pb-2">
+            <li className="border-b-[1px] border-white text-right">
               <button
                 onClick={() => {
                   navigate("/certifications");
                   setAbierto(false);
                 }}
-                className="text-white text-2xl mt-10 font-outfit pb-2 text-right"
+                className="text-white text-2xl mt-10 font-outfit p-2"
               >
                 Certifications
               </button>
             </li>
-            <li className="w-full border-b-2 border-white pb-2">
+            <li className="border-b-[1px] border-white text-right">
               <button
                 onClick={() => {
                   navigate("/contact");
                   setAbierto(false);
                 }}
-                className="text-white text-2xl mt-10 font-outfit pb-2 text-right"
+                className="text-white text-2xl mt-10 font-outfit p-2"
               >
                 Contact
               </button>
             </li>
           </ul>
-          <p className="text-white text-3xl mt-10 font-bold">
+          <p className="text-white text-3xl mt-10 font-bold pl-3">
             What you're seeing here is just the beginning..
           </p>
         </div>
+        <div className="absolute h-[250px] bottom-0 w-full overflow-hidden left-1/2 transform -translate-x-1/2">
+      <img src="icons/searching.svg" alt="Searching.." className="h-[380px] w-full"
+  />
+</div>
       </motion.div>
     </div>
   );
