@@ -34,7 +34,7 @@ const MissionVision = () => {
     const visible = useVisibilidad("mission-vision");
     return (
         <motion.div
-        className="flex items-center flex-row-reverse justify-evenly h-[90vh] p-6"
+        className="flex items-center flex-row-reverse justify-evenly h-[90vh]"
         initial={{ opacity: 0, scale: 1 }}
         animate={{opacity: visible ? 1 : 0, scale: visible ? 1 : 1 }}
         transition={{ duration: 1 }}
@@ -63,19 +63,35 @@ const Tech = () => {
     const visible = useVisibilidad("tech");
     return (
         <motion.div
-        className="flex items-center text-center flex-col h-[90vh] p-6 mt-2"
+        className="flex items-center text-center flex-col h-[90vh] p-6"
         initial={{ opacity: 0, scale: 1 }}
         animate={{opacity: visible ? 1 : 0, scale: visible ? 1 : 1 }}
         transition={{ duration: 1 }}
         id="tech" 
         >
             <h2 className="text-8xl top-0 text-azul font-bold text-center">Skills</h2>
-            <div className="flex justify-around h-[500px] w-full items-center mt-10">
-                <div className="h-[400px] w-[400px] bg-blue-500">
-                <Skill nombre="CSS" src="icons/html.svg" />
+            
+            <div className="flex justify-evenly h-[500px] w-full items-center mt-10">
+            <div>
+                <h3 className="font-bold text-xl mb-4 w-[400px] text-center">Frontend</h3>
+                <div className="h-[400px] w-[400px] grid grid-cols-3">
+                    <Skill nombre="HTML" src="icons/html.svg" />
+                    <Skill nombre="CSS" src="icons/css.svg" />
+                    <Skill nombre="React" src="icons/react.svg" />
+                    <Skill nombre="JavaScript" src="icons/js.svg" />
+                    <Skill nombre="Tailwind" src="icons/tailwind.svg" />
+                    <Skill nombre="Angular" src="icons/angular.svg" />
                 </div>
-                <div className="h-[400px] w-[400px] bg-red-500">
-
+                </div>
+                <div>
+                <h4 className="font-bold text-xl mb-4">Backend</h4>
+                <div className="h-[400px] w-[400px] grid grid-cols-3">
+                    <Skill nombre="Java" src="icons/java.svg" />
+                    <Skill nombre="Python" src="icons/python.svg" />
+                    <Skill nombre="PostgresSQL" src="icons/postgress.svg" />
+                    <Skill nombre="Spring" src="icons/spring.svg" />
+                    <Skill nombre="MySQL" src="icons/mysql.svg" />
+                </div>
                 </div>
             </div>
         </motion.div>
