@@ -6,14 +6,16 @@ export const Certifications = () => {
 
     const cerfitications = [
         {
-            title: "Tecnica Laboral en Programacion de Software",
-            institution: "Campuslands",
-            year: 2024
+            title: "EF English Certificate",
+            institution: "Education First",
+            year: 2024,
+            image: "public/images/AfBg_wRn_400x400.jpg"
         },
         {
             title: "Tecnica en Sistemas",
             institution: "Servicio Nacional de Aprendizaje",
-            year: 2023
+            year: 2023,
+            image: "public/images/9010.jpg"
         }
     ]
 
@@ -29,7 +31,7 @@ export const Certifications = () => {
             </div>
             <div className="h-[100%] w-[50vw] flex flex-col justify-evenly">
                 {cerfitications.map((certification, index) => {
-                    return (<Certification key={index} title={certification.title} institution={certification.institution} year={certification.year} />)
+                    return (<Certification key={index} title={certification.title} institution={certification.institution} year={certification.year} image={certification.image} />)
                 })}
             </div>
         </motion.div>

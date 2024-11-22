@@ -1,6 +1,6 @@
 import React from "react";
 import { Project } from "../components/project"
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion"; Icono
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,10 +19,11 @@ export const Projects = () => {
         {
             title: "Enchanted Garden",
             description: "MySQL Database for the administration of a farm, creation of 100 queries, events, functions, procedures and triggers.",
-            image: "../../public/images/examplePicture.png",
+            image: "../../public/images/Captura desde 2024-11-22 17-34-20.png",
             technologies: [
                 ""
-            ]
+            ],
+            enlace: "https://github.com/LauraAmaya08/MySQLII_proyecto_LauraAmaya"
         },
         {
             title: "Enchanted Garden",
@@ -59,10 +60,11 @@ export const Projects = () => {
                     {...settings}
                 >
                     {projects.map((project, index) =>
-                        <Project key={index} title={project.title} description={project.description} image={project.image} />
+                        <Project key={index} title={project.title} description={project.description} image={project.image} enlace={project.enlace}/>
                     )}
                 </Slider>
             </div>
+            
         </motion.div>
     )
 }
