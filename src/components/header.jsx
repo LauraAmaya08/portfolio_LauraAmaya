@@ -53,17 +53,6 @@ const Menu = () => {
             <li className="border-b-[1px] border-white text-right">
               <button
                 onClick={() => {
-                  navigate("/services");
-                  setAbierto(false);
-                }}
-                className="text-white text-2xl mt-10 font-outfit pb-2"
-              >
-                Services
-              </button>
-            </li>
-            <li className="border-b-[1px] border-white text-right">
-              <button
-                onClick={() => {
                   navigate("/projects");
                   setAbierto(false);
                 }}

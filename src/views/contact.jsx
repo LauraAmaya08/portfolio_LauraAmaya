@@ -10,16 +10,20 @@ export const Contact = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2 }}
         >
-                <div className="flex flex-col items-center w-[500px] h-[700px]">
-                    <h2 className="text-7xl mt-[20%] text-azul font-bold text-right w-full">Contact</h2>
-                    <p className="mt-7 font-outfit text-lg text-right">
+                <div className="flex justify-center items-center w-[500px] h-[600px]">
+                    <div className="flex flex-col items-end">
+                    <h2 className="text-[120px] text-azul font-bold text-right m-0">Contact</h2>
+                    <p className=" font-outfit text-[25px]">
                     Got an idea or project in mind? <br /><br />
                     </p>
-                    <Contacto informarcion="laurasofiaamayacasado@gmail.com" src="icons/html.svg" />
-                    <Contacto informarcion="Laura Amaya" src="icons/css.svg" />
-                    <Contacto informarcion="LauraAmaya08" src="icons/react.svg" />
+                    <Contacto informarcion="laurasofiaamayacasado@gmail.com" src="icons/mail.svg" />
+                    <Contacto informarcion="Laura Amaya" src="icons/linkedln.svg" />
+                    <Contacto informarcion="LauraAmaya08" src="icons/github.svg" />
+                    </div>
                 </div>
                 <img src="icons/contact.svg" alt="Greet" className="h-[700px] w-auto"/>
         </motion.div>
     );
 };
+
+
