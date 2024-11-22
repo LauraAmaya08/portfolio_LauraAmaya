@@ -10,3 +10,36 @@
 * {
     box-sizing: border-box;
   }
+
+  .slick-next,.slick-prev {
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 20px;
+    line-height: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px
+}
+
+
+.slick-next.slick-disabled:before,.slick-prev.slick-disabled:before {
+    opacity: .25
+}
+
+.slick-next:before,.slick-prev:before {
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #011C40 !important
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #011C40 !important;
+}
+
+
