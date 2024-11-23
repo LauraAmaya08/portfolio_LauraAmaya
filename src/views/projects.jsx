@@ -1,6 +1,6 @@
 import React from "react";
 import { Project } from "../components/project"
-import { motion } from "framer-motion"; Icono
+import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -26,24 +26,16 @@ export const Projects = () => {
             enlace: "https://github.com/LauraAmaya08/MySQLII_proyecto_LauraAmaya"
         },
         {
-            title: "Enchanted Garden",
-            description: "MySQL Database for the administration of a farm, creation of 100 queries, events, functions, procedures and triggers.",
-            image: "../../public/images/examplePicture.png"
+            title: "Glow Glam",
+            description: "A makeup and skincare responsive e-commerce site with detailed product views and an interactive shopping cart.",
+            image: "../../public/images/Captura desde 2024-11-22 19-58-03.png",
+            enlace: "https://github.com/LauraAmaya08/GlowGlam_funcional"
         },
         {
-            title: "Enchanted Garden",
-            description: "MySQL Database for the administration of a farm, creation of 100 queries, events, functions, procedures and triggers.",
-            image: "../../public/images/examplePicture.png"
-        },
-        {
-            title: "Enchanted Garden",
-            description: "MySQL Database for the administration of a farm, creation of 100 queries, events, functions, procedures and triggers.",
-            image: "../../public/images/examplePicture.png"
-        },
-        {
-            title: "Enchanted Garden",
-            description: "MySQL Database for the administration of a farm, creation of 100 queries, events, functions, procedures and triggers.",
-            image: "../../public/images/examplePicture.png"
+            title: "Progresso",
+            description: "A website built with JavaScript that allows users to effortlessly organize, track, and manage their entertainment resources, offering a smooth and interactive experience.",
+            image: "../../public/images/Diseño sin título.png",
+            enlace: "https://github.com/LauraAmaya08/Proyecto_JavaScript_AmayaLaura"
         }
     ]
     
