@@ -31,7 +31,9 @@ export const Projects = () => {
             image: "../../public/images/Captura desde 2024-11-22 19-58-03.png",
             enlace: "https://github.com/LauraAmaya08/GlowGlam_funcional",
             technologies: [
-                "../../public/icons/mysql.svg"
+                "../../public/icons/js.svg",
+                "../../public/icons/css.svg",
+                "../../public/icons/html.svg",
             ],
         },
         {
@@ -40,7 +42,9 @@ export const Projects = () => {
             image: "../../public/images/Diseño sin título.png",
             enlace: "https://github.com/LauraAmaya08/Proyecto_JavaScript_AmayaLaura",
             technologies: [
-                "../../public/icons/mysql.svg"
+                "../../public/icons/js.svg",
+                "../../public/icons/css.svg",
+                "../../public/icons/html.svg",
             ],
         }
     ]
