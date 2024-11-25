@@ -19,7 +19,7 @@ export const Projects = () => {
         {
             title: "Enchanted Garden",
             description: "MySQL Database for the administration of a farm, creation of 100 queries, events, functions, procedures and triggers.",
-            image: "../../public/images/Captura desde 2024-11-22 17-34-20.png",
+            image: "../../images/Captura desde 2024-11-22 17-34-20.png",
             technologies: [
                 "../../public/icons/mysql.svg"
             ],
@@ -28,7 +28,7 @@ export const Projects = () => {
         {
             title: "Glow Glam",
             description: "A makeup and skincare responsive e-commerce site with detailed product views and an interactive shopping cart.",
-            image: "../../public/images/Captura desde 2024-11-22 19-58-03.png",
+            image: "../../images/Captura desde 2024-11-22 19-58-03.png",
             enlace: "https://github.com/LauraAmaya08/GlowGlam_funcional",
             technologies: [
                 "../../public/icons/js.svg",
@@ -39,7 +39,7 @@ export const Projects = () => {
         {
             title: "Progresso",
             description: "A website built with JavaScript that allows users to effortlessly organize, track, and manage their entertainment resources, offering a smooth and interactive experience.",
-            image: "../../public/images/Diseño sin título.png",
+            image: "../../images/Diseño sin título.png",
             enlace: "https://github.com/LauraAmaya08/Proyecto_JavaScript_AmayaLaura",
             technologies: [
                 "../../public/icons/js.svg",

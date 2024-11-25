@@ -9,13 +9,13 @@ export const Certifications = () => {
             title: "EF English Certificate",
             institution: "Education First",
             year: 2024,
-            image: "public/images/AfBg_wRn_400x400.jpg"
+            image: "images/AfBg_wRn_400x400.jpg"
         },
         {
             title: "Tecnica en Sistemas",
             institution: "Servicio Nacional de Aprendizaje",
             year: 2023,
-            image: "public/images/9010.jpg"
+            image: "images/9010.jpg"
         }
     ]
 
