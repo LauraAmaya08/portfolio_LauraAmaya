@@ -12,8 +12,8 @@ export const Contact = () => {
         >
                 <div className="flex justify-center items-center w-[500px] h-[600px]">
                     <div className="flex flex-col items-end">
-                    <h2 className="text-[120px] text-azul font-bold text-right m-0">Contact</h2>
-                    <p className=" font-outfit text-[25px]">
+                    <h2 className="md:text-[100px] xl:text-[120px] text-azul font-bold text-right m-0">Contact</h2>
+                    <p className=" font-outfit md:text-[20px] 2xl:text-[25px]">
                     Got an idea or project in mind? <br /><br />
                     </p>
                     <Contacto informarcion="laurasofiaamayacasado@gmail.com" src="icons/mail.svg" />
@@ -21,7 +21,7 @@ export const Contact = () => {
                     <a href="https://github.com/LauraAmaya08"><Contacto informarcion="LauraAmaya08" src="icons/github.svg" /></a>
                     </div>
                 </div>
-                <img src="icons/contact.svg" alt="Greet" className="h-[700px] w-auto"/>
+                <img src="icons/contact.svg" alt="Greet" className="md:h-[600px] 2xl:h-[700px] w-auto"/>
         </motion.div>
     );
 };

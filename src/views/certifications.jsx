@@ -27,9 +27,9 @@ export const Certifications = () => {
             transition={{ duration: 1.2 }}
         >
             <div className="w-[50vw]">
-                <h2 className="text-7xl m-10 text-azul font-bold text-center">Certifications</h2>
+                <h2 className="md:text-6xl 2xl:text-7xl m-10 text-azul font-bold text-center">Certifications</h2>
             </div>
-            <div className="h-[100%] w-[50vw] flex flex-col justify-evenly">
+            <div className="md:h-[90%] 2xl:h-[100%] w-[50vw] flex flex-col justify-evenly">
                 {cerfitications.map((certification, index) => {
                     return (<Certification key={index} title={certification.title} institution={certification.institution} year={certification.year} image={certification.image} />)
                 })}

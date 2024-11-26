@@ -56,7 +56,7 @@ export const Projects = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2 }}
         >
-            <h2 className="text-7xl m-10 text-azul font-bold">Projects</h2>
+            <h2 className="md:text-6xl 2xl:text-7xl m-10 text-azul font-bold">Projects</h2>
             <div className=" w-[100%] mt-10">
                 <Slider 
                     {...settings}
