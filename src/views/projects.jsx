@@ -21,7 +21,7 @@ export const Projects = () => {
             description: "MySQL Database for the administration of a farm, creation of 100 queries, events, functions, procedures and triggers.",
             image: "../../images/Captura desde 2024-11-22 17-34-20.png",
             technologies: [
-                "../../public/icons/mysql.svg"
+                "../../icons/mysql.svg"
             ],
             enlace: "https://github.com/LauraAmaya08/MySQLII_proyecto_LauraAmaya"
         },
@@ -31,9 +31,9 @@ export const Projects = () => {
             image: "../../images/Captura desde 2024-11-22 19-58-03.png",
             enlace: "https://github.com/LauraAmaya08/GlowGlam_funcional",
             technologies: [
-                "../../public/icons/js.svg",
-                "../../public/icons/css.svg",
-                "../../public/icons/html.svg",
+                "../../icons/js.svg",
+                "../../icons/css.svg",
+                "../../icons/html.svg",
             ],
         },
         {
@@ -42,9 +42,9 @@ export const Projects = () => {
             image: "../../images/Diseño sin título.png",
             enlace: "https://github.com/LauraAmaya08/Proyecto_JavaScript_AmayaLaura",
             technologies: [
-                "../../public/icons/js.svg",
-                "../../public/icons/css.svg",
-                "../../public/icons/html.svg",
+                "../../icons/js.svg",
+                "../../icons/css.svg",
+                "../../icons/html.svg",
             ],
         }
     ]
